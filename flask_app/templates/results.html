@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %}
+
+{% block title %} Étude Lutherie Bruant {% endblock %}
+
+{% block content %}
+    <h1>Résultats</h1>
+    <ul>
+        <li> Enveloppe moyenne préférée : {{mean_favorite}} </li>
+        <li> Utilisateurs débutants : {{users['deb']}} </li>
+        <li> Utilisateurs intermédiaires : {{users['int']}} </li>
+        <li> Utilisateurs professionels : {{users['pro']}} </li>
+        <li> Taille de l'échantillon : {{sample_size}} </li>
+    </ul>
+    <form action='{{ url_for('index') }}'>
+        <input type="submit" id="return_button" value="Retour" />
+    </form>
+
+{% endblock %}
+

@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+
+{% block title %} Étude Lutherie Bruant {% endblock %}
+
+{% block content %}
+    <h1>Analyse comparative de l'envelope de sons de guitare</h1>
+
+    <h2> But du projet </h2>
+	<p>
+	Le projet d'analyse comparative de l'envelope de sons de guitare est une étude psychoacoustique menée part Louis Brillon et Olivier Chabot pour l'école de lutherie Bruand.
+    Le but de cette étude est d'analyser l'influence de la duretée de l'attaque sur la perception du son d'une guitare. Plus particulièrement si les auditeurs préférent
+    en général les sons avec des attaques plus progressives ou plus abruptes. Les résultats sont pondérés par une auto-évaluation de l'oreille musicale des participants.
+    </p>
+
+    <h2> Méthodologie </h2>
+    <p>
+    Les sons correspondent à un arpège contenant chaque corde à vide d'une guitare acoustique. Les sons avec des paramètres d'envelope différents sont générés numériquement
+    en reconstruisant des sons de guitare existants. Il y a une possibilité non nulle que les deux sons soient identique afin de pouvoir valider qu'il existe bel et bien une
+    différence dans la perception des auditeurs.
+    </p>
+
+    <h2> Implications dans la conception d'instruments </h2>
+    <p>
+    La vitesse de l'attaque est un paramètre correllé avec la masse d'un instruments. En effet, plus un instrument est lourd, plus les vibrations vont l'accélérer lentement,
+    et donc plus son attaque sera lente, pour un même matériau. Il est donc possible de faire varier la vitesse de l'attaque d'un instrument de façon en augmentant sa masse
+    lors de sa conception. Par conséquent, savoir comment la vitesse de l'attaque fait varier la qualité sonore perçue par l'auditeur pourrait permettre la conception
+    d'instruments ayant une meilleure sonorité.
+    </p>
+{% endblock %}

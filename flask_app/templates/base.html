@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+
+
+    <title>{% block title %} {% endblock %}</title>
+  </head>
+
+  <body>
+
+      <div class="topnav">
+        <a class="active" href="{{ url_for('index')}}">Expérience Psycho-Acoustique</a>
+        <a href="{{ url_for('about') }}">À Propos</a>
+        <a href="{{ url_for('results') }}">Résultats</a>
+      </div>
+
+      <div class="content"> 
+        {% block content %} {% endblock %}
+      </div>
+
+  </body>
+</html>

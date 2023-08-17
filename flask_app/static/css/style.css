@@ -1,0 +1,126 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #333;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #333;
+  color: white;
+}
+
+/* Set the whole page body beige */
+body {
+    background-color: #E0EEFF;
+}
+
+/* Display the sounds inline */
+ul.sounds > li {
+    display:inline-block;
+}
+
+ul.sounds {
+    margin :0
+}
+
+/*.content {
+    max-width: 960px;
+    margin: auto;
+} */
+
+.sound_label_r {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    padding-bottom:3px;
+    text-align:center;
+    /*border  : 1px solid #99cc99; */
+}
+    
+.sound_label_l {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding-bottom:3px;
+    text-align:center;
+    /*border  : 1px solid #99cc99; */
+}
+
+.sound_r {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    padding-right:10px;
+    padding-left:10px;
+    /*border  : 1px solid #99cc99; */
+}
+
+.sound_l {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    padding-right:10px;
+    padding-left:10px;
+    /*border  : 1px solid #99cc99; */
+}
+
+#sounds {
+    list-style-type: none;
+}
+
+#ability {
+    list-style-type: none;
+}
+
+#sounds > li {
+    display:inline-block;
+    padding-right:20px;
+    padding-left:20px;
+}
+
+#ability > li {
+    display:inline-block;
+    padding-right:20px;
+    padding-left:20px;
+}
+
+#submit_button {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#return_button {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+audio {
+    color:white;
+}

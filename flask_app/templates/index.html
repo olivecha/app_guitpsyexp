@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %} Étude Lutherie Bruant {% endblock %}
+
+{% block content %}
+
+    <h1>Analyse comparative de l'envelope de sons de guitare</h1>
+
+	<ul class="sounds">
+	    <li> 
+          <div>
+            <div class='sound_label_r'>
+                <h3 class="slabel"> Son A </h3>
+            </div>
+
+            <div class='sound_r'>
+	          <audio controls> 
+		      <source src={{ url_for("static", filename = "temp_sound1.wav") }} type="audio/wav">
+		      Your browser does not support the audio element.
+	          </audio>
+            </div>
+          </div>
+        </li>
+	    <li> 
+            <div class='sound_label_l'>
+                <h3 class="slabel"> Son B </h3>
+            </div>
+            <div class='sound_l'>
+	          <audio controls> 
+		      <source src={{ url_for("static", filename = "temp_sound2.wav") }} type="audio/wav">
+		      Your browser does not support the audio element.
+	          </audio>
+            </div>
+        </li>
+	</ul>
+
+	<form method="post" >
+        <h3> {{ form.sounds.label }} </h3>
+
+            {{ form.sounds() }}
+
+        <h3> {{ form.ability.label }} </h3>
+
+            {{ form.ability() }}
+
+		<p> {{message}} </p>
+
+        <input id="submit_button" type="submit" value="Soumettre">
+
+	</form>
+{% endblock %}
+
